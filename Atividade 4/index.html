@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GameNews — Notícias sobre Jogos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Game<span>News</span></h1>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#home">Home</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#esports">eSports</a>
+        <a href="#indie">Indie</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <form class="search" role="search" aria-label="Pesquisar notícias">
+        <input type="search" placeholder="Pesquisar jogos, reviews..." aria-label="Pesquisar" />
+        <button aria-label="Pesquisar">🔍</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <article class="featured">
+          <img src="img/hero-destaque.jpg" alt="Imagem destaque do jogo" />
+          <div class="meta">
+            <span class="tag">Destaque</span>
+            <h2>Novo RPG anuncia data de lançamento e modo cooperativo</h2>
+            <p>O estúdio revelou hoje que o aguardado RPG terá crossplay e um modo co-op para 4 jogadores.</p>
+            <a class="read-more" href="#">Ler notícia →</a>
+          </div>
+        </article>
+
+        <aside class="top-stories">
+          <h3>Últimas</h3>
+          <ul>
+            <li>
+              <a href="#">Patch 1.2 traz balanceamento e novo mapa competitivo</a>
+              <time datetime="2025-09-28">28 de set, 2025</time>
+            </li>
+            <li>
+              <a href="#">Indie brasileiro vence prêmio internacional</a>
+              <time datetime="2025-09-27">27 de set, 2025</time>
+            </li>
+            <li>
+              <a href="#">Guia rápido: como começar em FPS competitivo</a>
+              <time datetime="2025-09-26">26 de set, 2025</time>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="container grid-section">
+      <h2 class="section-title">Últimas notícias</h2>
+
+      <div class="articles-grid">
+        <article class="card">
+          <img src="img/shooter.jpg" alt="Imagem do artigo" />
+          <div class="card-body">
+            <h3>Review: Shooter futurista redefine o gênero</h3>
+            <p>Um review completo sobre jogabilidade, história e performance em diferentes plataformas.</p>
+            <a href="#" class="btn">Ler review</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/esports.jpg" alt="Imagem do artigo" />
+          <div class="card-body">
+            <h3>eSports: time brasileiro classifica-se para mundial</h3>
+            <p>Com uma campanha sólida, o time garantiu a vaga em uma série emocionante.</p>
+            <a href="#" class="btn">Ver campeonato</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/indie.jpg" alt="Imagem do artigo" />
+          <div class="card-body">
+            <h3>Indie: dicas para publicar no Steam</h3>
+            <p>Do marketing ao suporte pós-lançamento, guia prático para desenvolvedores independentes.</p>
+            <a href="#" class="btn">Ler guia</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/retro.jpg" alt="Imagem do artigo" />
+          <div class="card-body">
+            <h3>Retro: por que os clássicos seguem tão populares?</h3>
+            <p>Exploramos a nostalgia, design e a comunidade que mantém esses jogos vivos.</p>
+            <a href="#" class="btn">Ler mais</a>
+          </div>
+        </article>
+      </div>
+
+      <aside class="sidebar">
+        <div class="widget">
+          <h4>Top jogos da semana</h4>
+          <ol>
+            <li>Chrono Void</li>
+            <li>Riftbound</li>
+            <li>Skyforge 2</li>
+          </ol>
+        </div>
+
+        <div class="widget">
+          <h4>Newsletter</h4>
+          <p>Receba as principais notícias por e-mail.</p>
+          <form>
+            <input type="email" placeholder="seu@email.com" aria-label="E-mail para newsletter" />
+            <button>Inscrever</button>
+          </form>
+        </div>
+      </aside>
+    </section>
+
+    <section class="container features">
+      <h2 class="section-title">Colunas e análises</h2>
+      <div class="feature-cards">
+        <article>
+          <h3>Opinião: microtransações — prós e contras</h3>
+          <p>Análise sobre o impacto monetário nos jogos modernos.</p>
+          <a href="#">Ler coluna</a>
+        </article>
+        <article>
+          <h3>Técnico: otimizando desempenho em PC</h3>
+          <p>Dicas práticas para rodar jogos em máquinas com hardware modesto.</p>
+          <a href="#">Ler dica</a>
+        </article>
+        <article>
+          <h3>Cultura: trilhas sonoras inesquecíveis</h3>
+          <p>Como a música ajuda a construir experiências memoráveis nos jogos.</p>
+          <a href="#">Ler artigo</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contato">
+    <div class="container footer-grid">
+      <p>&copy; 2025 GameNews — Todos os direitos reservados.</p>
+      <nav aria-label="Redes sociais">
+        <a href="#">Twitter</a>
+        <a href="#">YouTube</a>
+        <a href="#">Discord</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
