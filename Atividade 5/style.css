@@ -1,0 +1,94 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+h2 {
+  font-size: 2rem;
+  color: white;
+}
+
+
+@media (max-width: 420px) {
+  .box {
+    background: gray;
+  }
+  h2::before {
+    content: "Cinza";
+  }
+}
+
+
+@media (min-width: 421px) and (max-width: 768px) {
+  .box {
+    background: orange;
+  }
+  h2::before {
+    content: "Laranja";
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .box {
+    background: hotpink;
+  }
+  h2::before {
+    content: "Rosa";
+  }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+  .box {
+    background: red;
+  }
+  h2::before {
+    content: "Vermelho";
+  }
+}
+
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+  .box {
+    background: blue;
+  }
+  h2::before {
+    content: "Azul";
+  }
+}
+
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+  .box {
+    background: yellow;
+  }
+  h2::before {
+    content: "Amarelo";
+    color: black; 
+  }
+}
+
+
+@media (min-width: 1921px) {
+  .box {
+    background: green;
+  }
+  h2::before {
+    content: "Verde";
+  }
+}
