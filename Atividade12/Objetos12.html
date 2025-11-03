@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function Retangulo(x, y) {
+            this.x = x;
+            this.y = y;
+            this.CalculaArea = function () {
+                return "area: " + this.x * this.y;
+            }
+        }
+        objRetangulo1 = new Retangulo(3,2);
+        alert(`RETANGULO \n ${objRetangulo1.CalculaArea()}`);
+
+        class Conta{
+            constructor(nome, banco, numConta, saldo){
+                this.nome = nome;
+                this._banco = banco;
+                this._numConta = numConta;
+                this._saldo = saldo;
+            }
+            getNome(){
+                return this.nome;
+            }
+            getBanco(){
+                return this._banco;
+            }
+            getNumConta(){
+                return this._numConta;
+            }
+            getSaldo(){
+                return this._saldo;
+            }
+
+        }
+
+        class Corrente extends Conta{
+            constructor(nome, banco, numConta, saldo){
+                super(nome, banco, numConta, saldo);
+                this._saldoEspecial;
+            }
+            setSaldoEspecial(value){
+                this._saldoEspecial = value;
+            }
+            getSaldoEspecial(){
+                return this._saldoEspecial;
+            }
+        }
+
+        class Poupanca extends Conta{
+            constructor(nome, banco, numConta, saldo){
+                super(nome, banco, numConta, saldo);
+                this._juros;
+                this._dataVencimento;
+            }
+            setJuros(value){
+                this._juros = value;
+            }
+            setDataVencimento(value){
+                this._dataVencimento = value;
+            }
+            getJuros(){
+                return this._juros;
+            }
+            getDataVencimento(){
+                return this._dataVencimento;
+            }
+        }
+
+        objCorrente1 = new Corrente("Sergio", "Itau", "00323", "35000", "3000");
+        objCorrente1.setSaldoEspecial("3000");
+        objPoupanca1 = new Poupanca("Thais", "Caixa", "00212", "10000", "500", "25/012/2025");
+        objPoupanca1.setJuros("2000");
+        objPoupanca1.setDataVencimento("23/12/2025");
+        alert("CONTA CORRENTE\n\n" + "Nome: " + objCorrente1.getNome() + "\nBanco: " + objCorrente1.getBanco() + "\nNumero da conta: " + objCorrente1.getNumConta() + "\nSaldo: " + objCorrente1.getSaldo() + "\nSaldo Especial: " + objCorrente1.getSaldoEspecial());
+        
+        alert("CONTA POUPANCA\n\n" + "Nome: " + objPoupanca1.getNome() + "\nBanco: " + objPoupanca1.getBanco() + "\nNumero da conta: " + objPoupanca1.getNumConta() + "\nSaldo: " + objPoupanca1.getSaldo() + "\nJuros: " + objPoupanca1.getJuros() + "\nData de Vencimento: " + objPoupanca1.getDataVencimento());
+
+        
+    </script>
+</body>
+</html>
